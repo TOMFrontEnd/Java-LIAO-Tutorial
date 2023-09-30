@@ -2,8 +2,8 @@ package com.itranswarp.learnjava;
 
 import java.io.UnsupportedEncodingException;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Learn Java from https://www.liaoxuefeng.com/
@@ -12,16 +12,16 @@ import org.apache.commons.logging.LogFactory;
  */
 public class Main {
 
-	static final Log log = LogFactory.getLog(Main.class);
+	static final Logger logger = LoggerFactory.getLogger(Main.class);
 
 	public static void main(String[] args) {
-		log.info("Start process...");
+		logger.info("Start process {}...", Main.class.getName());
 		try {
 			"".getBytes("invalidCharsetName");
 		} catch (UnsupportedEncodingException e) {
-			// TODO: 使用log.error(String, Throwable)打印异常
-log.error(e.getMessage());			
+			// TODO: 使用logger.error(String, Throwable)打印异常
+			logger.error(e.getMessage());
 		}
-		log.info("Process end.");
+		logger.info("Process end.");
 	}
 }

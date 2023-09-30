@@ -19,8 +19,7 @@ public class Main {
 		try {
 			"".getBytes("invalidCharsetName");
 		} catch (UnsupportedEncodingException e) {
-			// TODO: 使用log.error(String, Throwable)打印异常
-log.error(e.getMessage());			
+			log.error("Invalid encoding.", e);
 		}
 		log.info("Process end.");
 	}
