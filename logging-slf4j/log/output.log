@@ -1,3 +1,6 @@
 10:17:42.240 [main] INFO  com.itranswarp.learnjava.Main - Start process com.itranswarp.learnjava.Main...
 10:17:42.250 [main] ERROR com.itranswarp.learnjava.Main - invalidCharsetName
 10:17:42.250 [main] INFO  com.itranswarp.learnjava.Main - Process end.
+08:05:59.463 [main] INFO  com.itranswarp.learnjava.Main - Start process com.itranswarp.learnjava.Main...
+08:05:59.474 [main] ERROR com.itranswarp.learnjava.Main - invalidCharsetName
+08:05:59.474 [main] INFO  com.itranswarp.learnjava.Main - Process end.
